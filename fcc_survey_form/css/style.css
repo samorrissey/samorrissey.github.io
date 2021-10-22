@@ -1,0 +1,186 @@
+html {
+    min-height:100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../resources/forest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400; 
+    line-height: 1.5;
+    color: #BAD9D6; 
+    margin: 0;
+}
+
+p, label, input, textarea, option, select {
+    font-family: inherit;
+    display: flex; 
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.content {
+    justify-content: center;
+    width: 55vw; 
+    margin: 2.5rem auto 0 auto; 
+}
+
+#title {
+    font-family: 'Sansita', sans-serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: #BAD9D6; 
+}
+
+#subtitle {
+    font-family: 'Sansita', sans-serif;
+    font-size: 2rem;
+    color: #BAD9D6; 
+}
+
+.title-mod {
+    text-align: center;
+}
+
+#survey-form {
+    display: grid;
+    justify-content: center;
+    background-color: #174539;
+    padding: 2rem; 
+    margin-bottom: 2.75rem; 
+    border-radius: 0.5rem; 
+    width: 55vw; 
+}
+
+.text-boxes {
+    display: block; 
+    width: 100%; 
+    height: 1.8rem; 
+    padding: .25rem;
+    margin: .75rem auto 1rem auto;
+    color:rgba(41, 41, 41, 0.397); 
+    background-color: white; 
+    border-radius: 0.3rem;
+    border: 1px solid #174539;
+}
+
+/*FCC Code to Provide Highlight on Boxes*/
+.text-boxes:focus {
+    border-color: #1D2226; 
+    outline: 0; 
+    box-shadow: 0 0 0 0.2rem rgba(9, 126, 54, 0.596);
+}
+
+#dropdown { 
+    font-family: 'Open Sans', sans-serif;
+    display: block; 
+    width: 100%; 
+    height: 2.5rem; 
+    padding: .25rem 0.25rem;
+    margin: .75rem auto .25rem auto;
+    color:rgba(41, 41, 41, 0.85);   
+    background-color: white; 
+    border-radius: 0.3rem;
+    border: 1px solid #174539;
+}
+
+.radio {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 25px;
+    width: 100%;  
+}
+
+.radio-buttons {
+    margin-right: 10px;  
+    margin-bottom: .25rem; 
+}
+
+.checkbox-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 25px;
+    width: 100%;  
+}
+
+.checkbox-layout {
+    margin-right: 15px;  
+    margin-bottom: .25rem;
+}
+
+#form-write-section {
+    border-radius: 0.25rem;
+    width: 100%; 
+    min-height: 175px;
+    margin: 0 auto 1rem auto;
+}
+
+/*FCC Code to Provide Highlight on Boxes*/
+#form-write-section:focus {
+    border-color: #1D2226; 
+    outline: 0; 
+    box-shadow: 0 0 0 0.2rem rgba(9, 126, 54, 0.596);
+}
+
+#submit {
+    font-family: inherit;
+    font-size: 1.25rem;
+    display: block; 
+    width: 100%; 
+    height: 2.75rem; 
+    padding: .25rem;
+    margin: .75rem auto 1rem auto;
+    color:#1D2226;
+    background-color: #E3A64E; 
+    border-radius: 0.3rem;
+    border: 1px solid #E3A64E;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #B4BFA3;
+    border: 1px solid #B4BFA3;
+}
+
+/*W3 Schools Code to hide input arrows on number field*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*W3 Schools Code to hide input arrows on number field*/
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Media Queries*/
+
+@media (max-width: 750px){
+    #survey-form{
+        width: 65vw; 
+    } 
+}
+
+@media (max-width: 460px) {
+    .content{
+        margin: 5rem auto 3rem auto; 
+    }
+    #title {
+        font-size: 2rem;
+    }
+    #subtitle{
+        font-size: 1.5rem;
+    }
+    #survey-form{
+        width: 70vw; 
+    } 
+    #form-write-section {
+        font-size: 0.75rem; 
+    }
+}

@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>National Park Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<div class="content">
+
+    <!--Header Section Above the Form-->
+    <header class="welcome">
+        <h1 id="title" class="title-mod">National Park Survey</h1>
+        <h2 id="subtitle" class="title-mod">Your Voice in The Parks</h2>
+    </header>
+
+<!--Form Section-->
+<form id="survey-form">
+    <p id="description">We are excited to hear about your park experience. Simply fill out the form and let us know what we 
+        can improve to make your park experience even better. Thank you for your feedback on our parks!</p>
+
+    <!--Form Fields-->
+    <div class="form-fields">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" class="text-boxes" name="name" type="text" placeholder="Enter Your Name" required />
+    </div>
+    <div class="form-fields">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="text-boxes" name="email" type="email" placeholder="Enter Your Email" required />
+    </div>
+    <div class="form-fields">
+        <label class="phone-label" for="phone">Phone (optional)</label>
+        <!--phone field code from W3 Schools, initially intended to use phone as number field-->
+        <input id="phone" class="text-boxes" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter Your Phone Number" />
+    </div>
+    <div class="form-fields">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input id="number" class="text-boxes" name="age" type="number" min="16" max="99" placeholder="Enter Your Age" />
+    </div>
+
+    <!--Form Dropdown Section-->
+    <div class="form-fields">
+        <p>Which Park Did You Visit?</p>
+            <select id="dropdown" name="parks" required>
+            <option disabled selected value>Select National Park</option><!--FCC Codepen.io for how to create the "disabled selected value"-->
+            <option value="acadia">Acadia</option>
+            <option value="american samoa">American Samoa</option>
+            <option value="arches">Arches</option>
+            <option value="badlands">Badlands</option>
+            <option value="big bend">Big Bend</option>
+            <option value="biscayne">Biscayne</option>
+            <option value="black canyon of the gunnison">Black Canyon of the Gunnison</option>
+            <option value="bryce canyon">Bryce Canyon</option>
+            <option value="canyonlands">Canyonlands</option>
+            <option value="capitol reef">Capitol Reef</option>
+            <option value="carlsbad caverns">Carlsbad Caverns</option>
+            <option value="channel islands">Channel Islands</option>
+            <option value="congarees">Congaree</option>
+            <option value="crater lake">Crater Lake</option>
+            <option value="cuyahoga valley">Cuyahoga Valley</option>
+            <option value="death valley">Death Valley</option>
+            <option value="denali">Denali</option>
+            <option value="dry tortugas">Dry Tortugas</option>
+            <option value="everglades">Everglades</option>
+            <option value="gates of the arctic">Gates of the Arctic</option>
+            <option value="gateway arch">Gateway Arch</option>
+            <option value="glacier">Glacier</option>
+            <option value="glacier bay">Glacier Bay</option>
+            <option value="grand canyon">Grand Canyon</option>
+            <option value="grand teton">Grand Teton</option>
+            <option value="great basin">Great Basin</option>
+            <option value="great sand dunes">Great Sand Dunes</option>
+            <option value="great smoky mountains">Great Smoky Mountains</option>
+            <option value="guadalupe mountains">Guadalupe Mountains</option>
+            <option value="haleakalā">Haleakalā</option>
+            <option value="hawaiʻi volcanoes">Hawaiʻi Volcanoes</option>
+            <option value="hot springs">Hot Springs</option>
+            <option value="indiana dunes">Indiana Dunes</option>
+            <option value="isle royale">Isle Royale</option>
+            <option value="joshua tree">Joshua Tree</option>
+            <option value="katmai">Katmai</option>
+            <option value="kings canyon">Kings Canyon</option>
+            <option value="kobuk valley">Kobuk Valley</option>
+            <option value="lake clark">Lake Clark</option>
+            <option value="lassen volcanic">Lassen Volcanic</option>
+            <option value="mammoth cave">Mammoth Cave</option>
+            <option value="mesa verde">Mesa Verde</option>
+            <option value="mount rainier">Mount Rainier</option>
+            <option value="new river gorge">New River Gorge</option>
+            <option value="north cascades">North Cascades</option>
+            <option value="olympic">Olympic</option>
+            <option value="petrified forest">Petrified Forest</option>
+            <option value="pinnacles">Pinnacles</option>
+            <option value="redwood">Redwood</option>
+            <option value="rocky mountain">Rocky Mountain</option>
+            <option value="saguaro">Saguaro</option>
+            <option value="sequoia">Sequoia</option>
+            <option value="shenandoah">Shenandoah</option>
+            <option value="theodore roosevelt">Theodore Roosevelt</option>
+            <option value="virgin islands">Virgin Islands</option>
+            <option value="voyageurs">Voyageurs</option>
+            <option value="white sands">White Sands</option>
+            <option value="wind cave">Wind Cave</option>
+            <option value="wrangell – st. elias">Wrangell – St. Elias</option>
+            <option value="yellowstone ">Yellowstone</option>
+            <option value="yosemite">Yosemite</option>
+            <option value="zion">Zion</option>
+        </select>
+    </div>
+
+    <!--Form Radio Button Section-->
+    <div class="form-fields">
+        <p>How would you rank your park experience?</p>
+        <p>(5 = Excellent, 1 = Poor)</p>
+        <div class="radio">
+                <label>
+                    <input name="park-experience" type="radio" value="5" class="radio-buttons" checked / >5
+                </label>
+                <label>
+                    <input name="park-experience" type="radio" value="4" class="radio-buttons" / >4
+                </label>
+                <label>
+                    <input name="park-experience" type="radio" value="3" class="radio-buttons" / >3
+                </label>
+                <label>
+                    <input name="park-experience" type="radio" value="2" class="radio-buttons" / >2
+                </label>
+                <label>
+                    <input name="park-experience" type="radio" value="1" class="radio-buttons" / >1
+                </label>
+            </div>
+    </div>
+
+    <!--Form Checkbox Section-->
+    <div class="form-fields">
+        <p>Are you planning to visit more parks? If so, please select the parks you hope to visit.</p>
+        <div class="checkbox-section">
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="acadia" / >Acadia
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="american samoa" / >American Samoa
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="arches" / >Arches
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="badlands" / >Badlands
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="big bend" / >Big Bend
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="biscayne" / >Biscayne
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="black canyon of the gunnison" / >Black Canyon of the Gunnison
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="bryce canyon" / >Bryce Canyon
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="canyonlands" / >Canyonlands
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="capitol reef" / >Capitol Reef
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="carlsbad caverns" / >Carlsbad Caverns
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="channel islands" / >Channel Islands
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="congarees" / >Congaree
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="crater lake" / >Crater Lake
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="cuyahoga valley" / >Cuyahoga Valley
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="death valley" / >Death Valley
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="denali" / >Denali
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="dry tortugas" / >Dry Tortugas
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="everglades" / >Everglades
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="gates of the arctic" / >Gates of the Arctic
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="gateway arch" / >Gateway Arch
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="glacier" / >Glacier
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="glacier bay" / >Glacier Bay
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="grand canyon" / >Grand Canyon
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="grand teton" / >Grand Teton
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="great basin" / >Great Basin
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="great sand dunes" / >Great Sand Dunes
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="great smoky mountains" / >Great Smoky Mountains
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="guadalupe mountains" / >Guadalupe Mountains
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="haleakalā" / >Haleakalā
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="hawaiʻi volcanoes" / >Hawaiʻi Volcanoes
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="hot springs" / >Hot Springs
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="indiana dunes" / >Indiana Dunes
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="isle royale" / >Isle Royale
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="joshua tree" / >Joshua Tree
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="katmai" / >Katmai
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="kings canyon" / >Kings Canyon
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="kobuk valley" / >Kobuk Valley
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="lake clark" / >Lake Clark
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="lassen volcanic" / >Lassen Volcanic
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="mammoth cave" / >Mammoth Cave
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="mesa verde" / >Mesa Verde
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="mount rainier" / >Mount Rainier
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="new river gorge" / >New River Gorge
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="north cascades" / >North Cascades
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="olympic"/ >Olympic
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="petrified forest" / >Petrified Forest
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="pinnacles" / >Pinnacles
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="redwood" / >Redwood
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="rocky mountain" / >Rocky Mountain
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="saguaro" / >Saguaro
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="sequoia" / >Sequoia
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="shenandoah" / >Shenandoah
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="theodore roosevelt" / >Theodore Roosevelt
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="virgin islands" / >Virgin Islands
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="voyageurs" / >Voyageurs
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="white sands" / >White Sands
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="wind cave" / >Wind Cave
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="wrangell – st. elias" / >Wrangell – St. Elias
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="yellowstone " / >Yellowstone
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="yosemite" / >Yosemite
+            </label>
+            <label>
+                <input class="checkbox-layout" name="future-visit" type="checkbox" value="zion" / >Zion
+            </label>
+        </div>
+    </div>
+
+    <!--Form Textarea Section-->
+    <div class="form-fields">
+        <p>Would you like to share your park story?</p>
+            <textarea id="form-write-section" class="input-textarea" name="park-story" placeholder="Write your park experience here"></textarea>
+    </div>
+
+    <!--Form Button-->
+    <div class="form-fields">
+        <button id="submit" class="form-button" type="submit">Submit</button>
+    </div>
+</form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
+</html>
