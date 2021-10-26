@@ -1,6 +1,6 @@
 html {
     min-height:100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../resources/forest.jpg);
+    background: linear-gradient(0deg, rgba(0, 22, 9, 0.65), rgba(0, 0, 0, 0.65)), url(../resources/forest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,9 +23,11 @@ p, label, input, textarea, option, select {
 }
 
 .content {
+    display: grid;
     justify-content: center;
+    align-items: center;
     width: 55vw; 
-    margin: 2.5rem auto 0 auto; 
+    margin: 2.5rem auto 2.5rem auto; 
 }
 
 #title {
@@ -48,11 +50,22 @@ p, label, input, textarea, option, select {
 #survey-form {
     display: grid;
     justify-content: center;
+    align-items: center;
     background-color: #174539;
-    padding: 2rem; 
-    margin-bottom: 2.75rem; 
+    margin: auto auto 2.75rem auto; 
     border-radius: 0.5rem; 
     width: 55vw; 
+}
+
+#description {
+    margin-bottom: 0;
+    padding: 2rem 2rem 0 2rem; 
+}
+
+.form-fields {
+    margin-top: 0;
+    margin-right: .35rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .text-boxes {
@@ -60,7 +73,7 @@ p, label, input, textarea, option, select {
     width: 100%; 
     height: 1.8rem; 
     padding: .25rem;
-    margin: .75rem auto 1rem auto;
+    margin: .75rem auto 0 auto;
     color:rgba(41, 41, 41, 0.397); 
     background-color: white; 
     border-radius: 0.3rem;
@@ -80,7 +93,7 @@ p, label, input, textarea, option, select {
     width: 100%; 
     height: 2.5rem; 
     padding: .25rem 0.25rem;
-    margin: .75rem auto .25rem auto;
+    margin: .75rem auto 0 auto;
     color:rgba(41, 41, 41, 0.85);   
     background-color: white; 
     border-radius: 0.3rem;
@@ -96,14 +109,16 @@ p, label, input, textarea, option, select {
 
 .radio-buttons {
     margin-right: 10px;  
-    margin-bottom: .25rem; 
+    margin-bottom: 0; 
 }
 
 .checkbox-section {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-gap: 25px;
-    width: 100%;  
+    width: 100%; 
+    margin-top: 0; 
+    margin-bottom: 0;
 }
 
 .checkbox-layout {
@@ -112,10 +127,14 @@ p, label, input, textarea, option, select {
 }
 
 #form-write-section {
-    border-radius: 0.25rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: 1/1/4/4;
+    min-height: 175px; 
+    border-radius: 0.25rem; 
     width: 100%; 
-    min-height: 175px;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto .5rem auto;
 }
 
 /*FCC Code to Provide Highlight on Boxes*/
@@ -132,7 +151,7 @@ p, label, input, textarea, option, select {
     width: 100%; 
     height: 2.75rem; 
     padding: .25rem;
-    margin: .75rem auto 1rem auto;
+    margin: .75rem auto 2rem auto;
     color:#1D2226;
     background-color: #E3A64E; 
     border-radius: 0.3rem;
