@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*FCC code to set rem calculation*/
 html{
     /* Setting a base font size of 10px to assist with rem calculation
     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px, etc.
@@ -47,8 +49,8 @@ body {
 }
 
 img {  
-    max-width: 100%; 
     display: block; 
+    max-width: 100%; 
     height: auto; 
     margin: 0 auto; 
     padding-top: 25px; 
@@ -59,10 +61,10 @@ img {
     margin: 15px 0 5px 0;  
 }
 
-.headline {
+.tribute-headline {
     font-family: 'Crimson Text', serif;
     font-size: 3rem;
-    line-height: inherit; 
+    line-height: inherit;  
 }
 
 #tribute-info {
@@ -71,12 +73,24 @@ img {
     margin: 0 auto 50px auto; 
 }
 
+#tribute-info p {
+    max-width: 65vw; 
+    margin: 0 auto 50px auto; 
+    text-align: left; 
+    line-height: 1.6rem; 
+    list-style-type: none;
+}
+
 #tribute-img {
+    display: block; 
     justify-content: center;  
+    width: 100%; 
+    height: auto; 
 }
 
 #focus-img {
     max-width: 75%; 
+    height: auto; 
     margin-top: -25px; 
 }
 
@@ -86,7 +100,7 @@ img {
 }
 
 ul {
-    max-width: 550px; 
+    max-width: 65vw; 
     margin: 0 auto 50px auto; 
     text-align: left; 
     line-height: 1.6rem; 
@@ -95,21 +109,6 @@ ul {
 
 li {
     margin: 16px 0; 
-}
-
-#tribute-link a {
-    color: #934E06; 
-    text-decoration: none; 
-}
-
-#tribute-link a:hover {
-    color: #fa8047;  
-    text-decoration: none; 
-}
-
-#tribute-link a:visited {
-    color: #00781A; 
-    text-decoration: none; 
 }
 
 #tribute-info a {
@@ -133,8 +132,10 @@ li {
     #title {
         line-height: 6rem; 
     }
-    .headline {
+    .tribute-headline {
         line-height: 4rem; 
+        max-width: 65vw; 
+        margin: 0 auto 25px auto; 
     }
 }
 
@@ -158,7 +159,7 @@ li {
     #focus-caption{
         font-size: 1.25rem; 
     }
-    .headline {
+    .tribute-headline {
         font-size: 1.25rem; 
         line-height: 3.25rem; 
     }
