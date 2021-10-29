@@ -86,13 +86,14 @@ button {
 }
 
 .masthead-button {
-    margin: 0 auto 2rem 5rem; 
-    padding: 5rem .5rem 0 .5rem; 
+    margin: 1rem auto 2rem 5rem; 
+    padding: 5rem .5rem 0 .55rem; 
     background-color: white;
     border: 1px solid white; 
-    padding: 1rem; 
+    padding: 1.25rem; 
     width: auto;  
     border-radius: 0px 50px;
+    font-size: 1.25rem;
     color: #025159; 
 }
 
@@ -222,6 +223,10 @@ div {
         display: flex;
         flex-direction: column-reverse;
     }
+    .product-text article{
+        height: 55vh; 
+        width: 100%; 
+    }
     .video-container {
         display: grid;
         grid-gap: 1rem;
@@ -243,7 +248,8 @@ div {
         flex-direction: column;
     }
     .product-text article{
-        height: 60vh; 
+        height: 55vh; 
+        width: 100%;  
     }
     .video-container {
         display: grid;
