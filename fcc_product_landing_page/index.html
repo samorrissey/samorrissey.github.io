@@ -16,7 +16,7 @@
                     <img id="header-img" src="resources/logo-01.png" alt="Northstar Skis Logo" / >
                 </div>
                 <ul class="nav-list">
-                    <li class="list-item"><a class="nav-link" href="#masthead">What's New</a></li>
+                    <li class="list-item"><a class="nav-link" href="#whats-new">What's New</a></li>
                     <li class="list-item"><a class="nav-link" href="#product-section">Products</a></li>
                     <li class="list-item"><a class="nav-link" href="#video-section">Videos</a></li>
                 </ul>
@@ -25,13 +25,14 @@
         
     <!--Masthead Section-->
         <section id="masthead">
-            <h1 class="masthead-text">Shop Our Winter Sale</h1>
-            <button class="masthead-button">Shop Sale Items</button>
+            <span class="masthead-info">
+                <h1 id="whats-new" class="masthead-text">Shop Our Winter Sale</h1>
+                <button class="masthead-button">Shop Sale Items</button>
+            </span>
         </section>
 
     <!--Product Section-->
-    <h2 id="product-section">Shop Our Top Products</h2>
-        <section class="product-container">
+        <section id="product-section" class="product-container">
             <!--Product Row 1-->
             <div id="text-row1" class="product-text">
               <article>
@@ -48,7 +49,7 @@
           </section>
 
           <!--Product Row 2-->
-          <section class="product-container">
+          <section class="product-container2">
             <div class="product-image">
                 <img class="product-img" src="resources/helmet.jpg" alt="Teal Smith Ski Helmet with Sun Brim">
               </div>
@@ -84,7 +85,7 @@
           </section>
 
           <!--Product Row 4-->
-          <section class="product-container">
+          <section class="product-container2">
             <div class="product-image">
                 <img class="product-img" src="resources/skis.jpg" alt="Atomic Downhill Skis with Illustration">
               </div>
@@ -121,7 +122,7 @@
         <!--Footer Section-->
 
         <footer id="footer">
-            <h3>Sign up for Northstar Skis Emails</h3>
+            <h2>Sign up for Northstar Skis Emails</h2>
             <p>Offers, events, and cool new gear</p>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
               <input name="email" id="email" type="email" placeholder="Enter your email address" required />
