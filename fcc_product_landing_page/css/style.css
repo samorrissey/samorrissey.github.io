@@ -223,7 +223,7 @@ div {
         display: flex;
         flex-direction: column-reverse;
     }
-    .product-text article{
+    .product-text article {
         height: 55vh; 
         width: 100%; 
     }
@@ -243,11 +243,14 @@ div {
 
 /*Small Devices*/
 @media only screen and (max-width: 600px) {
+    #masthead {
+        height: 35vh; 
+    }
     .product-container {
         display: flex;
         flex-direction: column;
     }
-    .product-text article{
+    .product-text article {
         height: 55vh; 
         width: 100%;  
     }
