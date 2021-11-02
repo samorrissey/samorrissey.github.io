@@ -105,50 +105,33 @@ button {
 }
 
 /* Product Section Styles */
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+.product-grid > div {
+    background: #025159;
+    display: grid;
+    
+  }
+.product-grid > div::before {
+    content: "";
+    display: block;
+    grid-area: 1/1/2/2;
+  }
+.product-grid > div img {
+    width: 100%;
+    grid-area: 1/1/2/2;
+  }
+
+.product-grid > div span {
+    padding-left: 3rem; 
+    padding-right: 3rem
 }
 
-.product-container {
-    display: flex;
-}
-
-.product-container2 {
-    display: flex;
-}
-  
-.product-text {
-    flex: 1;
-    padding: 1rem;
-}
-
-#text-row1 {
-    background-color: #025159;
-}
-
-#text-row2 {
-    background-color: #0B8578;
-}
-
-#text-row3 {
-    background-color: #025159;
-}
-
-#text-row4 {
-    background-color: #0B8578;
-}
-  
-.product-image {
-    background-color: white;
-    flex: 1;
-    padding: 1rem;
-}
-
-.product-image img {
-    height: auto; 
-    width: 100%; 
+.product-grid > div button {
+    margin-top: 4rem;
 }
 
 .product-button-style1 {
@@ -161,7 +144,7 @@ div {
 }
 
 .product-button-style1:hover {
-    background-color: #025159;
+    background-color: transparent;
     border: 1px solid white; 
     color: white; 
 }
@@ -176,10 +159,11 @@ div {
 }
 
 .product-button-style2:hover {
-    background-color: #0B8578;
+    background-color: transparent;
     border: 1px solid white; 
     color: white; 
 }
+
 
 /*Video Section Styles*/
 .video-container {
@@ -210,22 +194,17 @@ div {
 }
 
 /*Media Queries*/
-@media (max-width: 1000px) {
+
+@media screen and (max-width: 1000px) {
     .navbar {
         display: flex; 
         flex-direction: column;
     }
-    .product-container {
-        display: flex;
-        flex-direction: column;
+    #masthead {
+        height: 45vh; 
     }
-    .product-container2 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .product-text article {
-        height: 55vh; 
-        width: 100%; 
+    .masthead-info h1 {
+        font-size: 5rem; 
     }
     .video-container {
         display: grid;
@@ -242,17 +221,9 @@ div {
 }
 
 /*Small Devices*/
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     #masthead {
         height: 35vh; 
-    }
-    .product-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .product-text article {
-        height: 55vh; 
-        width: 100%;  
     }
     .video-container {
         display: grid;
