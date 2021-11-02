@@ -110,20 +110,23 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
 .product-grid > div {
     background: #025159;
     display: grid;
     
   }
+
 .product-grid > div::before {
     content: "";
     display: block;
     grid-area: 1/1/2/2;
   }
+
 .product-grid > div img {
     width: 100%;
     grid-area: 1/1/2/2;
-  }
+}
 
 .product-grid > div span {
     padding-left: 3rem; 
@@ -222,8 +225,20 @@ button {
     .masthead-info h1 {
         font-size: 4rem; 
     }
+    .product-grid > div span {
+        padding-left: 1rem; 
+        padding-right: 1rem
+    }
+    .product-grid > div span p {
+        font-size: .6rem; 
+    }
+    .product-grid > div button {
+        margin-top: 1.75rem;
+        margin-bottom: .75rem; 
+    }
     .video-grid {
-        margin: 2rem; 
+        margin: 3rem; 
+        grid-gap: 4rem;
     }
 }
 
