@@ -104,8 +104,8 @@ button {
     color: white; 
 }
 
+/*Grid styling for Product Section and Video Section from Chris Coyier (A Grid of Squares)*/
 /* Product Section Styles */
-
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
