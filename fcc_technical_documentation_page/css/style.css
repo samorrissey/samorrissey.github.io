@@ -1,2 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+    font-family: 'Poppins', 'sans-serif'; 
+}
+
+
+nav select {
+    display: none;
+  }
+
+@media (max-width: 960px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+  }
