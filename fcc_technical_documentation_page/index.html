@@ -9,25 +9,28 @@
 
 </head>
 
-<body> 
+<body>
+
+    <!--Navigation Section-->
     <nav id="navbar">
         <header>JavaScript Documentation</header>
         <ul>
-            <li><a class="target nav-link" href="#introduction">Introduction</a></li>
-            <li><a class="target nav-link" href="#data-types">Data Types</a></li>
-            <li><a class="target nav-link" href="#variables">Variables</a></li>
-            <li><a class="target nav-link" href="#functions">Functions</a></li>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="#data-types">Data Types</a></li>
+            <li><a class="nav-link" href="#functions">Functions</a></li>
         </ul>
 
         <select>
             <option value="" selected="selected">Select a Topic</option>
-                <option value="#introduction">Introuction</option>
-                <option value="#data-types">Data Types</option>
+                <option value="#introduction">Introduction</option>
                 <option value="#variables">Variables</option>
+                <option value="#data-types">Data Types</option>
                 <option value="#functions">Functions</option>
         </select>
        </nav>
-
+    
+    <!--Main Body Section-->   
     <main id="main-doc">
         <section id="introduction" class="main-section">
             <header>JavaScript Introduction</header>
@@ -36,54 +39,123 @@
                 </span>
         </section>
 
-        <section id="data-types" class="main-section">
-            <header>Data Types</header>
-                <span>
-                    <p>Lorem ipsum</p>
-                    <li>Type</li>
-                    <li>Type</li>
-                    <li>Type</li>
-                    <li>Type</li>
-                    <li>Type</li>
-                    <li>Type</li>
-                    <li>Type</li>
-                </span>
-        </section>
-
         <section id="variables" class="main-section">
             <header>Variables</header>
                 <span>
-                    <p>Lorem ipsum</p>
+                    <p>A variable is a container for storing information. The variable 
+                        is an important step in coding because with variables we can start 
+                        using an important programming tool, repetition. Variables allow us to 
+                        quickly reuse a value in our program as well an change a value in 
+                        our program. 
+                    </p>
+
+                    <p>In ES6, <code>let</code> and <code>const</code> are the preferred variable 
+                        keywords for many programmers. <code>var</code> is the pre-ES6 
+                        keyword for variable. 
+                    </p>
+
+                    <p>Declaring a Variable Using <code>let</code></p>
+
                     <code>let myName = "Sara";</code>
+
+                    <p>The above example can be broken down into its basic parts. 
+                    <code>let</code> is a variable keyword. The JavaScript interpreter knows this
+                    <strong>keyword</strong> is used to create a variable. <code>myName</code> 
+                    is the the variable name. In order to use a variable you must give it a name. 
+                    This is sometimes called the <strong>identifier</strong>. 
+                    <code>=</code> is referred to as the assignment operator; this tells the 
+                    interpreter that you are going to assign a value to the variable. It is 
+                    also used to update the value given to a variable. <code>"Sara"</code> is the 
+                    variable's value.</p>
+
+                    <p>Using <code>let</code>, signals to the program that the variable can be
+                    reassigned to a different variable.</p>
+
+                    <p>Declaring a Variable Using <code>const</code></p>
+
+                    <code>const myName = "Sara";</code>
+
+                    <p><code>const</code> is short for <em>constant</em>. A variable assigned using 
+                    <code>const</code> cannot be reassigned later in the program. If you try, the 
+                    program will throw a <code>TypeError</code>. Additionally, <code>const</code> variables 
+                    must be assigned when they are declared or the program will throw a 
+                    <code>SyntaxError</code>.</p>
+
+                    <p>If you do not need to reassign a variable throughout the program, 
+                        use <code>const</code> otherwise, use <code>let</code>. 
+                    </p>
                 </span>
         </section>
 
-        <section id="introduction" class="main-section">
-            <header>JavaScript Introduction</header>
+        <section id="data-types" class="main-section">
+            <header>Data Types</header>
                 <span>
-                    <p>Lorem ipsum</p>
+                    <p>Data types describe the different types of data 
+                    that can be stored or manipulated within a program. They tell us
+                    about the data, including how it can be stored and what 
+                    types of operations we can perform. 
+                    JavaScript has six fundamental data types. They are:
+                    </p>
+                    <ul>
+                        <li>Number</li>
+                        <li>String</li>
+                        <li>Boolean</li>
+                        <li><strong>Null:</strong> the intentional absence of a value represented by the 
+                            keyword <code>null</code> 
+                        </li>
+                        <li><strong>Undefined:</strong> denoted by the keyword <code>undefined</code> (without quotes)
+                        and represents the absence of a value</li>
+                    </ul>
+                    <li><strong>Object:</strong> collections of related data</li>
+                    <P>There are two categories of data types, primitives and composite. The primitive 
+                        data types exist in almost every programming language. They are: 
+                    </P>
                 </span>
         </section>
 
-        <section id="introduction" class="main-section">
-            <header>JavaScript Introduction</header>
-                <span>
-                    <p>Lorem ipsum</p>
-                </span>
-        </section>
         <section id="functions" class="main-section">
             <header>Functions</header>
                 <span>
-                    <p>Lorem ipsum</p>
+                    <p>A function is a reusable block of code that groups together a 
+                        sequence of statements to perform a specific task. Functions are used 
+                        to organize a program into distinct units, making interchanging and editing 
+                        them easier. This makes the entire programs organized and modular. 
+                    </p>
+                    <p>A JavaScript function is defined with the <code>function</code> 
+                    keyword followed by a <code>name</code>, followed by parentheses. The code to 
+                    be executed by the function is placed insided curly braces.</p>
+
+                    <p>Function Declaration Syntax</p>
                     <code>
                         function greetWorld() {
                             console.log('Hello, World!'); 
                         }
-                    greetWorld();//Output: Hello, World!
-                </code>
+                    </code>
+
+                <p>The above example can be broken down into its basic parts. <code>function</code> 
+                    is the function keyword that allows us to <em>declare</em> a function. 
+                <code>greetWorld()</code> is the function name. This is also called an 
+                <strong>identifier</strong>. <code>{console.log('Hello, World!');}</code> is the 
+                function's statements, or the code to be executed.</p>
+                </span>
+        </section>
+
+        <section id="introduction" class="main-section">
+            <header>JavaScript Introduction</header>
+                <span>
+                    <p>Lorem ipsum</p>
+                </span>
+        </section>
+
+        <section id="introduction" class="main-section">
+            <header>JavaScript Introduction</header>
+                <span>
+                    <p>Lorem ipsum</p>
                 </span>
         </section>
     </main>
+
+
 </body>
 </html>
 
@@ -99,8 +171,6 @@ should have a corresponding id="JavaScript_and_Java").
 User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
 
 User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
 
 User Story #10: Additionally, the navbar should contain link (a) 
 elements with the class of nav-link. There should be one for 

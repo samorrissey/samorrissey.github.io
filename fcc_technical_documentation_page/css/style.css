@@ -2,6 +2,8 @@
 /* CSS Document */
 html {
     background-color: #1a1f36;
+    margin: 0; 
+    padding: 0; 
 }
 body {
     font-family: 'Poppins', 'sans-serif';
@@ -10,17 +12,27 @@ body {
 
 
 /*Navigation Styles*/
+
 #navbar {
     position: fixed;
-    border-right: solid; 
-    border-color: #c1c9d2;
-    height: 100%; 
-    padding-right: 2rem; 
+    display: block; 
+    margin: 1rem auto 0 .3rem;  
+    padding-right: 2rem;
 }
 
 #navbar header {
     font-weight: bold;
+    font-size: 1.2rem;
     color: white; 
+    margin: .3rem 0 0 .3rem; 
+}
+
+#navbar ul, #navbar li {
+    margin: 10px; 
+}
+
+#navbar ul {
+    margin: 0 0 0 -2rem;
 }
 
 #navbar li {
@@ -40,23 +52,21 @@ body {
     transition: color .2s ease;
 }
 
-#navbar:target {
+/*
+#navbar a:visited {
     color: #6c8eef; 
     font-weight: bold;
-    background-color: aqua;
+    background-color: hsla(249, 15%, 57%, 0.445); 
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px; 
     margin-right: 12px; 
-}
+    width: 100%; 
+}*/
 
 /*Dropdown Nav Bar*/
-nav select {
+#navbar select {
     display: none;
 }
-
-
-
-
 
 /*Main Document (Body) Styles*/
 #main-doc {
@@ -66,18 +76,22 @@ nav select {
     margin-bottom: 110px;
   }
 
-
-
 /*Media Queries*/
 @media (max-width: 960px) {
-        nav ul { 
+        #navbar ul { 
             display: none; 
         }
-        nav select { 
-            position: fixed;
-            display: inline-block; 
+        #navbar select { 
+            position: absolute;
+            display: inline-block;     
+            width: 100%;           
+            border: none;
+            z-index: 99;
         }
+
         #main-doc {
-            margin-left: 0; 
+            position: relative; 
+            z-index: -1;
+            margin-left: 0px;
         }
   }
