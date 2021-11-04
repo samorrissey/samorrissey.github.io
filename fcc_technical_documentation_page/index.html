@@ -18,6 +18,7 @@
             <li><a class="nav-link" href="#introduction">Introduction</a></li>
             <li><a class="nav-link" href="#variables">Variables</a></li>
             <li><a class="nav-link" href="#data-types">Data Types</a></li>
+            <li><a class="nav-link" href="#arrays">Arrays</a></li>
             <li><a class="nav-link" href="#functions">Functions</a></li>
         </ul>
 
@@ -26,6 +27,7 @@
                 <option value="#introduction">Introduction</option>
                 <option value="#variables">Variables</option>
                 <option value="#data-types">Data Types</option>
+                <option value="#arrays">Arrays</option>
                 <option value="#functions">Functions</option>
         </select>
        </nav>
@@ -59,14 +61,17 @@
                     <code>let myName = "Sara";</code>
 
                     <p>The above example can be broken down into its basic parts. 
-                    <code>let</code> is a variable keyword. The JavaScript interpreter knows this
-                    <strong>keyword</strong> is used to create a variable. <code>myName</code> 
-                    is the the variable name. In order to use a variable you must give it a name. 
-                    This is sometimes called the <strong>identifier</strong>. 
-                    <code>=</code> is referred to as the assignment operator; this tells the 
-                    interpreter that you are going to assign a value to the variable. It is 
-                    also used to update the value given to a variable. <code>"Sara"</code> is the 
-                    variable's value.</p>
+                        <ul>
+                            <li><code>let</code> is a variable keyword. The JavaScript interpreter knows this
+                                <strong>keyword</strong> is used to create a variable.</li>
+                            <li><code>myName</code> is the the variable name. In order to use a variable you must give it a name. 
+                                This is sometimes called the <strong>identifier</strong>.</li>
+                            <li><code>=</code> is referred to as the assignment operator; this tells the 
+                                interpreter that you are going to assign a value to the variable. It is 
+                                also used to update the value given to a variable.</li>
+                            <li><code>"Sara"</code> is the variable's value.</li>
+                        </ul>  
+                     </p>
 
                     <p>Using <code>let</code>, signals to the program that the variable can be
                     reassigned to a different variable.</p>
@@ -113,6 +118,42 @@
                 </span>
         </section>
 
+        <section id="arrays" class="main-section">
+            <header>Arrays</header>
+                <span>
+                    <p>Arrays are JavaScript's way of making lists. An array is a special type 
+                        of variable that stores a list of values. When creating an array, you do not 
+                        need to specify how many values it will hold. Arrays can store any data type including: 
+                        <ul>
+                            <li>strings</li>
+                            <li>numbers</li>
+                            <li>booleans</li>
+                        </ul>
+                    </p>
+
+                    <p>Creating An Array</p>
+                    <p>One way to create an array is to create an array literal. It creates an 
+                        array by wrapping items in square brackets.
+                    </p>
+
+                    <p>Array Literal Syntax</p>
+                        <code>['element example', 10, true]</code>
+
+                    <p>The above example can be broken down into its basic parts.
+                        <ul>
+                            <li>The array is represented by the square brackets 
+                                <code>[]</code> and the content inside
+                            </li>
+                            <li>Each content item instide an array is called an <strong>element</strong></li>
+                            <li>There are three elements inside this example array</li>
+                            <li>Each element inside this example array is a different data type</li>
+                        </ul>
+                    </p>
+
+                    <p>Arrays can be saved to a variable. </p>
+                </span>
+        </section>
+
         <section id="functions" class="main-section">
             <header>Functions</header>
                 <span>
@@ -132,18 +173,36 @@
                         }
                     </code>
 
-                <p>The above example can be broken down into its basic parts. <code>function</code> 
-                    is the function keyword that allows us to <em>declare</em> a function. 
-                <code>greetWorld()</code> is the function name. This is also called an 
-                <strong>identifier</strong>. <code>{console.log('Hello, World!');}</code> is the 
-                function's statements, or the code to be executed.</p>
-                </span>
-        </section>
+                <p>The above example can be broken down into its basic parts. 
+                <ul>
+                    <li><code>function</code> is the function keyword that allows us 
+                    to <em>declare</em> a function</li>
 
-        <section id="introduction" class="main-section">
-            <header>JavaScript Introduction</header>
-                <span>
-                    <p>Lorem ipsum</p>
+                    <li><code>greetWorld()</code> is the function name. This is also called an 
+                    <strong>identifier</strong></li>
+                
+                    <li><code>{console.log('Hello, World!');}</code> is the 
+                    function's statements, or the code to be executed</li>
+                </ul>
+                </p>
+
+                <p>Declaring a function does not ask the code inside the function body to run, 
+                    it just declares the existence of the function. The code inside a function body 
+                    executes only when a function is <em>called</em>. 
+                </p>
+
+                <P>Calling a Function Syntax</P>
+                    <code>greetWorld(); // prints 'Hello, World!'</code>
+
+                <p>In order to call a function in code, type the function name followed by 
+                    parentheses. This function call executes the function body, or all of the 
+                    statement between the curly braces in the function declaration. 
+                </p>
+
+                <ul>
+                    <li><strong>Note:</strong> You can call the same function as many times as needed.</li>
+                </ul>
+
                 </span>
         </section>
 
