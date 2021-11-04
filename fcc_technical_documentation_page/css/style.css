@@ -1,15 +1,83 @@
 @charset "utf-8";
 /* CSS Document */
+html {
+    background-color: #1a1f36;
+}
 body {
-    font-family: 'Poppins', 'sans-serif'; 
+    font-family: 'Poppins', 'sans-serif';
+    color: #c1c9d2;  
 }
 
 
+/*Navigation Styles*/
+#navbar {
+    position: fixed;
+    border-right: solid; 
+    border-color: #c1c9d2;
+    height: 100%; 
+    padding-right: 2rem; 
+}
+
+#navbar header {
+    font-weight: bold;
+    color: white; 
+}
+
+#navbar li {
+    color: #c1c9d2; 
+    list-style: none;
+}
+
+#navbar a {
+    color: #c1c9d2; 
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+#navbar a:hover {
+    color: white;
+    font-weight: bold;
+    transition: color .2s ease;
+}
+
+#navbar:target {
+    color: #6c8eef; 
+    font-weight: bold;
+    background-color: aqua;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
+    margin-right: 12px; 
+}
+
+/*Dropdown Nav Bar*/
 nav select {
     display: none;
+}
+
+
+
+
+
+/*Main Document (Body) Styles*/
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
   }
 
+
+
+/*Media Queries*/
 @media (max-width: 960px) {
-    nav ul     { display: none; }
-    nav select { display: inline-block; }
+        nav ul { 
+            display: none; 
+        }
+        nav select { 
+            position: fixed;
+            display: inline-block; 
+        }
+        #main-doc {
+            margin-left: 0; 
+        }
   }
