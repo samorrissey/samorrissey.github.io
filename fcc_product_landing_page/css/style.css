@@ -34,6 +34,8 @@ button {
     top: 0; 
     position: sticky; 
     background-color: white;
+    width: 100%; 
+    z-index: 99;
 }
 .navbar {
     font-family: 'Work Sans', 'sans-serif';
@@ -43,6 +45,7 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 15px; 
+ 
 }
 
 .nav-list {
@@ -71,7 +74,7 @@ button {
 }
 
 /*Masthead Section Styles*/
-#masthead{
+#masthead {
     background-image: url(../resources/skiLineup.jpg);
     height: 65vh; 
     width: 100%; 
@@ -104,7 +107,7 @@ button {
     color: white; 
 }
 
-/*New Product Section*/
+/*Product Section*/
 .product-container, .product-container2 {
     display: flex; 
 }
@@ -112,9 +115,37 @@ button {
 .product-text{    
     background: #025159;
     width: 50vw; 
-    justify-content: center;
-    align-items: center;
+    position: relative;  
 }
+
+.product-text h3{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.product-text p{
+    margin: 0;
+    line-height: 1.5rem; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.product-text button{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
 
 .product-image {
     width: 50vw;    
@@ -255,12 +286,24 @@ button {
         flex-direction: column;
     }
     #masthead {
-        height: 450px; 
+        height: 55vh;        
     }
     .masthead-info h1 {
-        font-size: 4rem; 
+        font-size: 2.5rem; 
     }
-    .product-container{
+    
+    .masthead-text {
+        margin: 0 .25rem 2rem 5rem; 
+        padding: 2.5rem .25rem 0 .25rem;  
+    }
+    .masthead-button {
+        margin: 0 auto 2rem 5rem;  
+        padding: 2.5rem .25rem 0 .25rem; 
+        padding: .80rem; 
+        width: auto;  
+        font-size: .75rem;
+    }
+    .product-container {
         flex-wrap: wrap;
     }
     .product-container2{
@@ -274,6 +317,31 @@ button {
         width: 100%; 
         height: 100%; 
     }
+    .product-text h3{
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+    .product-text p{
+        margin: 0;
+        line-height: 1.5rem; 
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+    .product-text button{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
     .video-grid {
         margin: 3rem; 
         grid-gap: 4rem;
@@ -285,15 +353,34 @@ button {
 
 /*Small Devices*/
 @media (max-width: 600px) {
-    #masthead {
-        height: 350px; 
-    }
     .product-text {
         width: 100%; 
         height: 500px; 
     }
-    #footer {
-        width: 100%;
+    .product-text h3{
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+    .product-text p{
+        margin: 0;
+        line-height: 1.5rem; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+    .product-text button{
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
     }
 }
 
