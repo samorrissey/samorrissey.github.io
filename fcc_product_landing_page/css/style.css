@@ -35,7 +35,7 @@ button {
     position: sticky; 
     background-color: white;
     width: 100%; 
-    z-index: 99;
+    z-index: 1000;
 }
 .navbar {
     font-family: 'Work Sans', 'sans-serif';
@@ -45,7 +45,6 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 15px; 
- 
 }
 
 .nav-list {
@@ -124,7 +123,7 @@ button {
     top: 30%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
 }
 
 .product-text p{
@@ -134,7 +133,9 @@ button {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .product-text button{
@@ -143,9 +144,8 @@ button {
     top: 70%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
 }
-
 
 .product-image {
     width: 50vw;    
@@ -196,29 +196,24 @@ button {
 
 #video-section {
     text-align: center;
+    padding-bottom: .75rem; 
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 2rem;
-    margin: 2rem;
-  }
-  .video-grid > section {
-    padding: 1rem;
-    display: grid;
-    place-items: center;
-  }
-  .video-grid > section::before {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-    grid-area: 1/1/2/2;
-  }
-  .video-grid > section iframe {
-    width: 100%;
-    grid-area: 1/1/2/2;
-  }
+.video-container {
+    display: flex; 
+}
+
+.video-div1 {
+    width: 50vw;
+    margin-left: 2rem;
+    margin-right: 1rem;    
+}
+
+.video-div2 {
+    width: 50vw;
+    margin-left: 1rem;
+    margin-right: 2rem;    
+}
 
 #video {
     height: 50vh; 
@@ -342,9 +337,19 @@ button {
         margin-right: -50%;
         transform: translate(-50%, -50%) 
     }
-    .video-grid {
-        margin: 3rem; 
-        grid-gap: 4rem;
+    .video-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-div1 {
+        width: 75vw;
+        margin: .5rem auto 1rem auto;     
+    }
+    
+    .video-div2 {
+        width: 75vw;
+        margin: .5rem auto 1rem auto;   
     }
     #footer {
         width: 100%;
