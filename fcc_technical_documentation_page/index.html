@@ -24,6 +24,7 @@
             <li><a class="nav-link" href="#data_types">Data Types</a></li>
             <li><a class="nav-link" href="#arrays">Arrays</a></li>
             <li><a class="nav-link" href="#functions">Functions</a></li>
+            <li><a class="nav-link" href="#loops">Loops</a></li>
         </ul>      
     </nav>
 
@@ -33,7 +34,16 @@
         <section id="introduction" class="main-section">
             <header>JavaScript Introduction</header>
                 <span>
-                    <p>Lorem ipsum</p>
+                    <p>JavaScript is a scripting or programming language that allows you to implement complex 
+                        features on web pages. It is cross-platform and object-oriented. JavaScript adds interactivity 
+                        to webpages. There are more advanced versions of JavaScript such as Node.js, which allows you to 
+                        add even more functionality to a website than downloading files (such as realtime collaboration between 
+                        multiple computers). 
+                    </p>
+                    <p>JavaScript contains a standard library of objects such as <code class="para-code">Array</code>, 
+                    <code class="para-code">Date</code>, and <code class="para-code">Math</code>, and a core set of language 
+                    elements such as operators, control structures, and statements. 
+                </p>
                 </span>
         </section>
 
@@ -191,7 +201,7 @@
                     <code class="body-code">greetWorld(); // prints 'Hello, World!'</code>
 
                 <p>In order to call a function in code, type the function name followed by 
-                    parentheses. This function call executes the function body, or all of the 
+                    parentheses. This <strong>function call</strong> executes the function body, or all of the 
                     statement between the curly braces in the function declaration. 
                 </p>
 
@@ -202,10 +212,65 @@
                 </span>
         </section>
 
-        <section id="introduction" class="main-section">
-            <header>JavaScript Introduction</header>
+        <section id="loops" class="main-section">
+            <header>Loops</header>
                 <span>
-                    <p>Lorem ipsum</p>
+                    <p>Loops check a condition. If the condition returns <code class="para-code">true</code>, a code block will run. 
+                        Then the condition will be checked again and if the condition still returns 
+                        <code class="para-code">true</code>, the code block will run agian. It repeats 
+                        until the conditions return <code class="para-code">false</code>. Each execution of a loop's 
+                        instructions is called an <strong>iteration</strong>. Loops allow us to create 
+                        efficient code that automates processes to make scalable, manageable programs. 
+                    </p>
+
+                    <p>The statements for loops provided in JavaScript are:
+                        <ul>
+                            <li><code class="para-code">for</code> statement</li>
+                            <li><code class="para-code">do...while</code> statement</li>
+                            <li><code class="para-code">while</code> statement</li>
+                            <li><code class="para-code">labeled</code> statement</li>
+                            <li><code class="para-code">break</code> statement</li>
+                            <li><code class="para-code">continue</code> statement</li>
+                            <li><code class="para-code">for...in</code> statement</li>
+                            <li><code class="para-code">for...of</code> statement</li>
+                        </ul>
+                    </p>
+
+                    <p>The <code class="para-code">for</code> loop is the most common type of loop. A 
+                    <code class="para-code">for</code> loop repeats until a specified condition is 
+                    evaluated to <code class="para-code">false</code>. The typical <code class="para-code">for</code> 
+                    loop includes an <code class="para-code">iterator variable</code>. The <code class="para-code">iterator variable</code> 
+                    is initialized, checked against a stopping condition, and assigned a new value on each loop 
+                    iteration. They can have any name, but it is best practice to use a descriptive variable name.</p>
+
+                    <p><code class="para-code">for</code>Loop Syntax</p>
+                    <code class="body-code">
+                        for (let counter=0; counter < 4; counter++) {
+                            console.log(counter); 
+                        }
+                        //Output
+                        0
+                        1
+                        2
+                        3
+                    </code>   
+                    <p>The above example can be broken down into its basic parts.
+                        <ul>
+                            <li>The initialization is <code class="para-code">let counter = 0</code> 
+                                so the loop will start counting at 0</li>
+                            <li>The stopping condition is <code class="para-code">counter < 4</code>, 
+                                meaning the loop will run as long as the iterator variable, 
+                                <code class="para-code">counter</code>, is less than 4</li>
+                            <li>The iteration statement is <code class="para-code">counter++</code>. This means after each loop, 
+                                the value of <code class="para-code">counter</code> will increase by 1. For the first iteration of 
+                                counter will equal 0, for the second iteration <code class="para-code">counter</code> will equal 1, etc...</li>
+                            <li>The code block is inside of the curly braces, <code class="para-code">console.log(counter)</code>, will execute until the 
+                                condition evaluates to <code class="para-code">false</code>. The condition will be false when <code class="para-code">counter</code> is greater than or 
+                                equal to 4 - the point when the condition becomes false is 
+                                sometimes called the <strong>stop condition</strong></li>    
+                        </ul>
+                    This <code class="para-code">for</code> loop makes it possible to write <code class="para-code">0, 1, 2, 3</code> programmatically.
+                    </p>
                 </span>
         </section>
     </main>
