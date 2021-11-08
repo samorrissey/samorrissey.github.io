@@ -69,13 +69,13 @@
                     <p>The above example can be broken down into its basic parts. 
                         <ul>
                             <li><code class="para-code">let</code> is a variable keyword. The JavaScript interpreter knows this
-                                <strong>keyword</strong> is used to create a variable.</li>
+                                <strong>keyword</strong> is used to create a variable</li>
                             <li><code class="para-code">myName</code> is the the variable name. In order to use a variable you must give it a name. 
-                                This is sometimes called the <strong>identifier</strong>.</li>
+                                This is sometimes called the <strong>identifier</strong></li>
                             <li><code class="para-code">=</code> is referred to as the assignment operator; this tells the 
                                 interpreter that you are going to assign a value to the variable. It is 
-                                also used to update the value given to a variable.</li>
-                            <li><code class="para-code">"Sara"</code> is the variable's value.</li>
+                                also used to update the value given to a variable</li>
+                            <li><code class="para-code">"Sara"</code> is the variable's value</li>
                         </ul>  
                      </p>
 
@@ -86,14 +86,14 @@
 
                     <code class="body-code">const myName = "Sara";</code>
 
-                    <p><code class="para-code">const</code> is short for <em>constant</em>. A variable assigned using 
+                    <p><code class="para-code">const</code> is short for <strong>constant</strong>. A variable assigned using 
                     <code>const</code> cannot be reassigned later in the program. If you try, the 
-                    program will throw a <code class="para-code">TypeError</code>. Additionally, <code>const</code> variables 
+                    program will throw a <code class="para-code">TypeError</code>. Additionally, <code class="para-code">const</code> variables 
                     must be assigned when they are declared or the program will throw a 
                     <code class="para-code">SyntaxError</code>.</p>
 
                     <p>If you do not need to reassign a variable throughout the program, 
-                        use <code class="para-code">const</code> otherwise, use <code>let</code>. 
+                        use <code class="para-code">const</code> otherwise, use <code class="para-code">let</code>. 
                     </p>
                 </span>
         </section>
@@ -182,7 +182,7 @@
                 <p>The above example can be broken down into its basic parts. 
                 <ul>
                     <li><code class="para-code">function</code> is the function keyword that allows us 
-                    to <em>declare</em> a function</li>
+                    to <strong>declare</strong> a function</li>
 
                     <li><code class="para-code">greetWorld()</code> is the function name. This is also called an 
                     <strong>identifier</strong></li>
@@ -194,7 +194,7 @@
 
                 <p>Declaring a function does not ask the code inside the function body to run, 
                     it just declares the existence of the function. The code inside a function body 
-                    executes only when a function is <em>called</em>. 
+                    executes only when a function is <strong>called</strong>. 
                 </p>
 
                 <P>Calling a Function Syntax</P>
@@ -271,6 +271,39 @@
                         </ul>
                     This <code class="para-code">for</code> loop makes it possible to write <code class="para-code">0, 1, 2, 3</code> programmatically.
                     </p>
+
+                    <p>The <code class="para-code">while</code> loop repeats until a condition changes and executes an undetermined 
+                    number for times. In a <code class="para-code">while</code> loop, the condition can be something other than a counter 
+                    and the code will continue to loop as long as the condition is <code class="para-code">true</code>.</p>
+
+                    <p><code class="para-code">while</code>Loop Syntax</p>
+                    <code class="body-code">
+                        let counterTwo = 1; 
+                        while (counterTwo < 4) {
+                            console.log(counterTwo); 
+                            counterTwo++; 
+                        }
+                        //Output
+                        1
+                        2
+                        3
+                    </code>
+
+                    <p>The above code can be broken down into its basic parts.
+                        <ul>
+                            <li>The <code class="para-code">counterTwo</code> variable is declared <strong>before</strong> the loop. 
+                            We can access it inside our <code class="para-code">while</code> loop since it is in the global scope</li>
+                            <li>We start out loop with the keyword <code class="para-code">while</code> followed by our 
+                                stopping condition, or test condition. This will be evaluated before each round of the loop. 
+                                While condition evaluates to <code class="para-code">true</code>, the block will continue to run. 
+                                Once it evaluates to <code class="para-code">false</code> the loop will stop</li>
+                            <li>Next, we have our loop's code block which prints <code class="para-code">counterTwo</code> 
+                                to the console and increments <code class="para-code">counterTwo</code></li>
+                        </ul>
+                    </p>
+
+                    <p>It is beneficial to use a <code class="para-code">while</code> loop when you want to execute 
+                    a loop for an undetermined number of times.</p>
                 </span>
         </section>
     </main>
