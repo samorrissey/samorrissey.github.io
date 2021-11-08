@@ -12,25 +12,21 @@
 <body>
 
     <!--Navigation Section-->
+    <span id="hamburgerBtn">&#9776</span>
+
     <nav id="navbar">
-        <header>JavaScript Documentation</header>
-        <ul>
+        <div class="nav-header">
+            <header>JavaScript Documentation</header>
+        </div>
+        <ul class="nav-items">
             <li><a class="nav-link" href="#introduction">Introduction</a></li>
             <li><a class="nav-link" href="#variables">Variables</a></li>
-            <li><a class="nav-link" href="#data-types">Data Types</a></li>
+            <li><a class="nav-link" href="#data_types">Data Types</a></li>
             <li><a class="nav-link" href="#arrays">Arrays</a></li>
             <li><a class="nav-link" href="#functions">Functions</a></li>
-        </ul>
+        </ul>      
+    </nav>
 
-        <select>
-            <option value="" selected="selected">Select a Topic</option>
-                <option value="#introduction">Introduction</option>
-                <option value="#variables">Variables</option>
-                <option value="#data-types">Data Types</option>
-                <option value="#arrays">Arrays</option>
-                <option value="#functions">Functions</option>
-        </select>
-       </nav>
     
     <!--Main Body Section-->   
     <main id="main-doc">
@@ -92,7 +88,7 @@
                 </span>
         </section>
 
-        <section id="data-types" class="main-section">
+        <section id="data_types" class="main-section">
             <header>Data Types</header>
                 <span>
                     <p>Data types describe the different types of data 
@@ -213,29 +209,8 @@
                 </span>
         </section>
     </main>
-
+    
+    <script src="javascript/responsive.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
-
-<!--User Stories-->
-
-<!--
-User Story #4: Each section element with the class of main-section 
-should also have an id that corresponds with the text of each header contained within it. 
-Any spaces should be replaced with underscores 
-(e.g. The section that contains the header "JavaScript and Java" 
-should have a corresponding id="JavaScript_and_Java").
-
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #10: Additionally, the navbar should contain link (a) 
-elements with the class of nav-link. There should be one for 
-every element with the class main-section.
-
-
-User Story #14: On regular sized devices (laptops, desktops), 
-the element with id="navbar" should be shown on the left side of the 
-screen and should always be visible to the user.-->

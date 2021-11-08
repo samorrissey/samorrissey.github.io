@@ -2,80 +2,81 @@
 /* CSS Document */
 html {
     background-color: #1a1f36;
-    margin: 0; 
-    padding: 0; 
+    min-height: 100vh; 
 }
+
 body {
     font-family: 'Poppins', 'sans-serif';
-    color: #c1c9d2;  
+    color: #c1c9d2;
+    font-size: 1rem;  
+    margin-left: 250px; 
 }
 
 
 /*Navigation Styles*/
 
 #navbar {
-    position: fixed;
-    display: block; 
-    margin: 1rem auto 0 .3rem;  
-    padding-right: 2rem;
+    width: 250px; 
+    height: 100vh; 
+    position: fixed; 
+    background-color: #1a1f36;
+    color: #c1c9d2;
+    top: 0; 
+    left: 0; 
+    padding: 30px 20px; 
+    display: flex;
+    flex-direction: column;   
 }
 
-#navbar header {
+.nav-header {
+    color: white;    
     font-weight: bold;
-    font-size: 1.2rem;
-    color: white; 
-    margin: .3rem 0 0 .3rem; 
+    font-size: 1.5rem;
 }
 
-#navbar ul, #navbar li {
-    margin: 10px; 
+.nav-items {
+    padding-inline-start: 0;
 }
 
-#navbar ul {
-    margin: 0 0 0 -2rem;
+.nav-items > li {
+    list-style-type: none;
+    margin-bottom: 20px; 
 }
 
-#navbar li {
-    color: #c1c9d2; 
-    list-style: none;
+.nav-items > li:hover {
+    cursor: pointer;
 }
 
-#navbar a {
-    color: #c1c9d2; 
+.nav-link {
+    color: #c1c9d2;
     text-decoration: none;
-    line-height: 3rem;
 }
 
-#navbar a:hover {
-    color: white;
+.nav-link:hover {
+    color: #6c8eef;
     font-weight: bold;
-    transition: color .2s ease;
-}
+} 
 
-/*
-#navbar a:visited {
-    color: #6c8eef; 
-    font-weight: bold;
-    background-color: hsla(249, 15%, 57%, 0.445); 
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; 
-    margin-right: 12px; 
-    width: 100%; 
-}*/
-
-/*Dropdown Nav Bar*/
-#navbar select {
+#hamburgerBtn {
+    position: fixed;
+    top: 30px; 
+    right: 30px; 
+    color: #c1c9d2;
     display: none;
+    z-index: 10;
+}
+
+#hamburgerBtn:hover {
+    cursor: pointer;
+    color: #6c8eef;
 }
 
 /*Main Document (Body) Styles*/
-#main-doc {
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
+  #main-doc {
+      padding: 40px; 
+      margin: 0 auto; 
+      max-width: 1000px;
   }
-
   #main-doc header {
       font-size: 1.5rem;
       font-weight: bold;
@@ -87,21 +88,28 @@ body {
   }
 
 /*Media Queries*/
-@media (max-width: 960px) {
-        #navbar ul { 
-            display: none; 
-        }
-        #navbar select { 
-            position: absolute;
-            display: inline-block;     
-            width: 100%;           
-            border: none;
-            z-index: 99;
-        }
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 0;
+    }
+    #navbar {
+        width: 100vw; 
+        transform: translateX(-1000px);
+        transition: transform 500ms;
+    }
+    #navbar.open {
+        transform: translateX(0);
+    }
+    .nav-header {
+        font-size: 1.25rem;
+        text-align: center;
+    }            
+    .nav-items > li {
+        text-align: center;
+    }
+    #hamburgerBtn {
+        display: inline-block;
+    }
+}
 
-        #main-doc {
-            position: relative; 
-            z-index: -1;
-            margin-left: 0px;
-        }
-  }
+
