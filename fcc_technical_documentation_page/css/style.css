@@ -14,7 +14,6 @@ body {
 
 
 /*Navigation Styles*/
-
 #navbar {
     width: 250px; 
     height: 100vh; 
@@ -53,7 +52,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #6c8eef;
+    color: white;
     font-weight: bold;
 } 
 
@@ -68,7 +67,7 @@ body {
 
 #hamburgerBtn:hover {
     cursor: pointer;
-    color: #6c8eef;
+    color: white;
 }
 
 /*Main Document (Body) Styles*/
@@ -86,6 +85,33 @@ body {
   #main-doc strong {
     color: #6c8eef;
   }
+
+/*Code Styles*/
+.body-code {
+    display: block; 
+    background-color: #3c4257;
+    padding: 15px; 
+    border-radius: 10px; 
+    margin: 10px;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+}    
+
+.para-code {
+    color: #4db7e8;
+    background-color: #3c4257;
+    padding: 5.5px; 
+    border-radius: 7.5px; 
+    margin: 5.5px;   
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;    
+}
 
 /*Media Queries*/
 @media only screen and (max-width: 768px) {
