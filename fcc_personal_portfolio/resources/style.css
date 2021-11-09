@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+}
+
+/*HTML (Universal) Styles*/
+h1 {
+    font-family: 'Alice', Helvetica, sans-serif;
+    color: white; 
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Alice', Helvetica, sans-serif;
+    color: white; 
+    font-size: 2rem; 
+}
+
+h3 {
+    font-family: 'Epilogue'; 
+}
+
+a {
+    font-family: 'Epilogue';
+    color: white; 
+    text-decoration: none;
+}
+
+/*Hover Styles*/
+span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #FF6495; 
+}
+  
+span:before {
+    left: -2.5px;
+}
+
+span:after {
+    right: 2.5px;
+    background: #FF6495; 
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+span:hover:before {
+    background: #FF6495; 
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+/*Navigation Styles*/
+#navbar {
+   background-color: #361999; 
+   color: white; 
+   display: flex;
+   justify-content: flex-end;
+   position: fixed; 
+   font-size: 1.25rem;
+   padding-right: 25px; 
+   width: 100%; 
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block; 
+    padding: 25px 30px; 
+}
+
+/*Masthead (Welcome) Section Styles*/
+#welcome-section {
+    background-color: #361999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; 
+}
+
+/*Project (Body) Section*/
+#projects {
+    background-color: #78FFF1;
+}
+
+/*Media Queries*/
+@media all and (max-width: 480px) {
+  #navbar {
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0 1rem; 
+    }
+}
