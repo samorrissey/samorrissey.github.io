@@ -82,6 +82,7 @@ span:hover:after {
    font-size: 1.25rem;
    padding-right: 25px; 
    width: 100%; 
+   z-index: 99;
 }
 
 .nav-list {
@@ -106,6 +107,10 @@ span:hover:after {
 /*Project (Body) Section*/
 #projects {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #projects h2 {
@@ -115,14 +120,15 @@ span:hover:after {
 .project-container {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem; 
+    grid-gap: 2.5rem; 
     width: 100%;
-    margin: 0 auto;     
+    margin: 0 auto;   
+    margin-bottom: 4rem;  
     max-width: 1280px;
 }
 
 .project-image {
-    height: calc(100% - 5rem); 
+    height: 450px; 
     width: 100%; 
     object-fit: cover;
 }
@@ -132,11 +138,25 @@ span:hover:after {
 }
 
 /*Media Queries*/
+@media all and (max-width: 975px) {
+    #projects {
+        padding: 6rem 1rem; 
+    }
+    .project-image {
+        height: calc(100% - 5rem); 
+    }
+}
 @media all and (max-width: 480px) {
   #navbar {
         justify-content: center;
     }
     .nav-list {
         margin: 0 1rem; 
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .project-container {
+        grid-template-columns: 1fr;
     }
 }
