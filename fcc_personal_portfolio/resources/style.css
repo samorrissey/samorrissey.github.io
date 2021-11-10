@@ -167,6 +167,7 @@ span:hover:after {
     #projects {
         padding: 6rem 1rem; 
     }
+    /*height calculation from FCC*/
     .project-image {
         height: calc(100% - 5rem); 
     }
