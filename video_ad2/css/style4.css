@@ -1,0 +1,50 @@
+@charset "utf-8"; 
+/*Universal Styling*/
+body {
+    font-family: 'Poppins';
+    color: whitesmoke;
+    font-size: .8rem; 
+}
+
+/*Grid Setup*/
+.container {
+    padding: 2rem; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    width: 500px; 
+    height: 250px;
+}
+
+/*Image and Text Styling*/
+.cell {
+    background-color: #138DB2;
+}
+
+.cell iframe {
+    margin-bottom: -1rem;
+}
+
+.ad-info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.ad-info h1 {
+    line-height: 1.2; 
+}
+
+button {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke; 
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #138DB2; 
+    margin-top: .45rem;
+    padding: .40rem .5rem; 
+}
+
+button:hover {
+    background-color: #138DB2; 
+    border: 1px solid whitesmoke;  
+    color: whitesmoke; 
+}

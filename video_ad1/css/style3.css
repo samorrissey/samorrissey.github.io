@@ -1,0 +1,80 @@
+@charset "utf-8"; 
+/* Universal Styles */
+body {
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+/*Grid Method*/
+.container {
+    padding: 2rem; 
+    width: 250px; 
+    height: 500px;
+    position: relative;
+}
+
+.cell {
+    background-color: #074661;
+}
+
+.grid {
+    display: grid; 
+    grid-template-rows: 1fr 2fr; 
+    /* grid-gap: 1rem;  */
+}
+
+.ad-text {
+    padding: 1rem;
+    color: whitesmoke;
+    text-align: start;
+}
+
+.ad-text h1 {
+    text-align: center;
+    margin-top: -.5rem;
+}
+
+.ad-text p {
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+
+.ad-logo {
+    width: 35px; 
+    height: auto; 
+    position: absolute; 
+    bottom: 45px; 
+    left: 45px; 
+}
+
+button {
+    font-family: 'Poppins';
+    color: #074661; 
+    font-weight: 800;
+    background-color: whitesmoke;
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 27px; 
+    position: absolute; 
+    bottom: 45px; 
+    right: 45px; 
+    cursor: pointer; 
+}
+
+
+/* Flex Method: to implement, change grid to flex on parent div
+
+.flex {
+    display: flex; 
+    gap: 1rem; 
+}
+
+.flex > .cell {
+    flex-grow: 1; 
+}
+
+/* To specifiy a single cell to grow 
+
+.flex > .cell:nth-child(2){
+    flex-grow: 2; 
+} */

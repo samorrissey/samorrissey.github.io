@@ -1,0 +1,49 @@
+@charset "utf-8"; 
+
+.container {
+    padding: 2rem; 
+    width: 970px; 
+    height: 250px; 
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    position: absolute; 
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+}
+
+.cell {
+    background-color: #0B749A; 
+    font-family: 'Poppins';
+    color: whitesmoke; 
+    font-size: .55rem; 
+    text-align: center;
+    /* align-items: center; */
+}
+
+.cell iframe {
+    margin-bottom: -15px; 
+}
+
+.cell img {
+    width: 85px; 
+    height: auto;   
+}
+
+.cell a {
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+#ad-logo {
+    width: 35px; 
+    height: auto; 
+    position: absolute;
+    bottom: 10px; 
+    right: 150px; 
+}
+
