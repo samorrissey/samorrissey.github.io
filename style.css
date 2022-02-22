@@ -13,6 +13,7 @@ h1 {
     font-family: 'Alice', Helvetica, sans-serif;
     color: white; 
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
@@ -86,6 +87,8 @@ span:hover:after {
    color: white; 
    display: flex;
    justify-content: flex-end;
+   align-items: center;
+   align-content: center;
    position: fixed; 
    font-size: 1.25rem;
    padding-right: 25px; 
@@ -98,9 +101,16 @@ span:hover:after {
 }
 
 .nav-list .list-item {
-    display: inline-block; 
+    display: inline-block;
     padding: 25px 30px; 
 }
+
+svg {
+    height: 30px; 
+    width: 30px; 
+    margin-right: 7px;
+    align-self: center; 
+} 
 
 /*Masthead (Welcome) Section Styles*/
 #welcome-section {
