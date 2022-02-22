@@ -105,14 +105,6 @@ span:hover:after {
     padding: 25px 30px; 
 }
 
-/* svg {
-    height: 30px; 
-    width: 30px; 
-    margin-right: 7px;
-    align-self: center; 
-}  */
-
-
 .svg-icon {
     display: inline-flex;
     align-self: center;  
