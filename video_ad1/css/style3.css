@@ -47,20 +47,32 @@ body {
     left: 45px; 
 }
 
-button {
-    font-family: 'Poppins';
-    color: #074661; 
-    font-weight: 800;
-    background-color: whitesmoke;
-    border: none; 
-    border-radius: 10px; 
-    padding: 10px 27px; 
-    position: absolute; 
-    bottom: 45px; 
-    right: 45px; 
-    cursor: pointer; 
+.cta-button {
+    grid-column-start: 2;  
+    grid-column-end: -1; 
+    grid-row-start: 3; 
+    grid-row-end: -1;
+    background-color: #074661;
+    margin-top: -12px;
 }
 
+.cta-button a {
+    text-decoration: none;
+    border: 1px solid whitesmoke; 
+    color: #074661; 
+    background-color: whitesmoke;
+    padding: 4px 12px; 
+    border-radius: 8px; 
+    cursor: pointer;  
+}
+
+.cta-button a:hover {
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke; 
+    cursor: pointer;
+}
 
 /* Flex Method: to implement, change grid to flex on parent div
 
