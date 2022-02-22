@@ -70,9 +70,10 @@ body {
 }
 
 .container {
+    height: 500px; 
     display: grid; 
     grid-template-columns: 125px 125px;
-    grid-template-rows: 150px 325px 25px; 
+    grid-template-rows: auto 325px 25px; 
 }
 
 .item-1 {
@@ -80,7 +81,7 @@ body {
     grid-column-end: -1; 
     grid-row-start: 1; 
     grid-row-end: 2; 
-    
+    background-color: #074661;
 }
 
 .item-2 {
