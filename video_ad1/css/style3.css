@@ -43,15 +43,14 @@ body {
     width: 35px; 
     height: auto; 
     position: absolute; 
-    bottom: 45px; 
-    left: 45px; 
+    bottom: 35px; 
+    left: 42.5px; 
 }
 
 .cta-button {
-    grid-column-start: 2;  
-    grid-column-end: -1; 
-    grid-row-start: 3; 
-    grid-row-end: -1;
+    position: absolute; 
+    bottom: 45px; 
+    right: 42.5px; 
     background-color: #074661;
     margin-top: -12px;
 }
