@@ -105,12 +105,29 @@ span:hover:after {
     padding: 25px 30px; 
 }
 
-svg {
+/* svg {
     height: 30px; 
     width: 30px; 
     margin-right: 7px;
     align-self: center; 
-} 
+}  */
+
+
+.svg-icon {
+    display: inline-flex;
+    align-self: center;  
+}
+
+.svg-icon svg {
+    height: 1em; 
+    width: 1em; 
+}
+
+.baseline svg{
+    top: .125rem; 
+    margin-right: 7px; 
+    position: relative; 
+}
 
 /*Masthead (Welcome) Section Styles*/
 #welcome-section {
