@@ -74,6 +74,90 @@ body {
     cursor: pointer;
 }
 
+/*Accompanying Styles for alternative layout option
+
+body {
+    font-family: 'Poppins';
+    color: whitesmoke;
+    padding: 2rem; 
+}
+
+.container {
+    height: 500px; 
+    display: grid; 
+    grid-template-columns: 125px 125px;
+    grid-template-rows: auto 325px 25px; 
+}
+
+.item-1 {
+    grid-column-start: 1;  
+    grid-column-end: -1; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    background-color: #074661;
+}
+
+.item-2 {
+    grid-column-start: 1;  
+    grid-column-end: -1; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    justify-self: center;
+    text-align: center;  
+    background-color: #074661;
+}
+
+.item-2 p{
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.item-3 {
+    grid-column-start: 1;  
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    grid-row-end: -1; 
+    background-color: #074661;
+}
+
+.item-3 img{
+    height: 25px; 
+    width: auto; 
+    align-self: start;
+    margin-top: -10px;
+    padding-left: 10px;
+}
+
+.item-4 {
+    grid-column-start: 2;  
+    grid-column-end: -1; 
+    grid-row-start: 3; 
+    grid-row-end: -1;
+    background-color: #074661;
+    margin-top: -12px;
+}
+
+.item-4 a {
+    text-decoration: none;
+    border: 1px solid whitesmoke; 
+    color: #074661; 
+    background-color: whitesmoke;
+    padding: 4px 12px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+
+.item-4 a:hover {
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke; 
+    cursor: pointer;
+}*/
+
+
+
 /* Flex Method: to implement, change grid to flex on parent div
 
 .flex {
